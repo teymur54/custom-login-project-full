@@ -1,0 +1,55 @@
+.sidebar-container {
+  height: 100%;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+/* Application section */
+.sidebar-application {
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+/* Navigation Links */
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-link {
+  text-decoration: none;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.sidebar-link:hover {
+  color: #ff6600;
+}
+
+/* Active Link */
+.sidebar-link:active {
+  font-weight: bold;
+  color: #ff6600;
+}
+
+/* Logout Button */
+.sidebar-logout {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #ff6600;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.sidebar-logout:hover {
+  background-color: #e64d00;
+}
+
+/* Main Content */
+.main-content {
+  margin-left: 270px; /* Adjust to keep the content away from the sidebar */
+  padding: 20px; /* Optional: add padding to the main content */
+}

@@ -1,0 +1,182 @@
+table {
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 2px solid #dddddd;
+  padding: 4px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.action-button-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.action-button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 8px 24px;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.action-button:hover {
+  opacity: 0.9;
+}
+
+.update-button {
+  background-color: #37a504;
+}
+
+.update-button:hover {
+  background-color: #0f5800;
+}
+
+.delete-button {
+  background-color: #dc3545;
+}
+
+.delete-button:hover {
+  background-color: #bd2130;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  position: relative;
+  background-color:#f0f0f0;
+  border-left: 2px solid #dddddd;
+  border-right: 2px solid #dddddd;
+}
+
+.header button {
+  margin: 0 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  color: #333;
+  font-size: 14px;
+  outline: none;
+}
+
+.header .pdf-button {
+  position: absolute;
+  left: 4px;
+  background-color: #23b100;
+  color: white;
+  border: none;
+}
+
+.header button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.header select {
+  padding: 8px;
+  margin: 0 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.header input {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  margin-right: 10px;
+  width: 15%;
+  height: 34px;
+}
+/* Media queries for responsiveness */
+@media screen and (max-width: 1024px) {
+  th, td {
+    padding: 2px;
+    font-size: 16px;
+  }
+
+  .action-button {
+    padding: 6px 12px;
+    font-size: 16px;
+  }
+
+  .pdf-button {
+    padding: 9px 14px;
+    font-size: 14px;
+  }
+
+  .header button,
+  .header select {
+    padding: 6px 10px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  th, td {
+    padding: 0px;
+    font-size: 14px;
+  }
+
+  .action-button {
+    padding: 5px 10px; 
+    font-size: 12px;
+  }
+
+  .pdf-button {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .header button,
+  .header select {
+    padding: 6px 8px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  th, td {
+    padding: 0px;
+    font-size: 12px;
+  }
+
+  .action-button {
+    padding: 4px 6px;
+    font-size: 12px;
+  }
+
+  .pdf-button {
+    padding: 5px 8px;
+    font-size: 10px;
+  }
+
+  .header button,
+  .header select {
+    padding: 0px;
+    font-size: 12px;
+  }
+
+  .header input {
+    height: 16px;
+    font-size: 10px;
+    margin-left: 10px;
+  }
+}

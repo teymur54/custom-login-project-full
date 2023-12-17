@@ -1,0 +1,48 @@
+/* UpdateEmployee.css */
+.update-employee-container {
+  margin: 10px auto;
+  max-width: 500px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.update-employee-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.update-form-label {
+  margin-bottom: 10px;
+}
+
+.update-label-text {
+  font-weight: bold;
+}
+
+.update-form-input,
+.update-form-select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 20px;
+}
+
+.update-submit-button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.update-submit-button:hover {
+  background-color: #0056b3;
+}
