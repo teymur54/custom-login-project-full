@@ -42,7 +42,9 @@ const HomePage = () => {
   }, [isSuccess]);
 
   const handleSearchInputChange = (e) => {
-    setSearch(e.target.value);
+    const value = e.target.value;
+    const sanitizedValue = value.replace(/[^\w\d]/g, "");
+    setSearch(sanitizedValue);
   };
 
   const handlePreviousPage = () => {
