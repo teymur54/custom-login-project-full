@@ -43,7 +43,7 @@ const HomePage = () => {
 
   const handleSearchInputChange = (e) => {
     const value = e.target.value;
-    const sanitizedValue = value.replace(/[^\w\d]/g, "");
+    const sanitizedValue = value.replace(/[^\w\dƏəХхЪъЖжЮюБб]/g, "");
     setSearch(sanitizedValue);
   };
 
